@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Send form</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <form id="send_form" method="post" action="sendmail.php">
+    	<h4>Send form</h4>
+        <div class="col-sm-4">
+            <input name="name" type="text" placeholder="Ф.И.О." required>
+            <input name="job" type="text" placeholder="Должность">
+            <span class="hidden-xs">Остались вопросы&nbsp;&mdash; звоните: <br><a href="tel:+77766655">+77766655</a></span>
+        </div>
+        <div class="col-sm-4">
+            <input name="organization" type="text" placeholder="Название организации">
+            <input name="phone" type="text" placeholder="Телефон" required minlength="5">
+            <button class="hvr-ripple-out send_btn" type="submit">Зарегистрировать</button>
+        </div>
+    </form>
+
+<script src="main.js"></script>
+</body>
+
+</html>
